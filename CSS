@@ -1,0 +1,62 @@
+/* General chat container styling */
+#tlkio {
+    width: 100%;
+    height: 400px;
+    border: 2px solid #FF69B4; /* Pink border */
+    border-radius: 10px;
+    background-color: #2C2C2C; /* Dark background */
+    font-family: 'Audiowide', sans-serif; /* Font matching pinkhotmess.com */
+}
+
+/* Chat input box styling */
+.tlkio_input input {
+    background-color: #FF69B4; /* Light pink */
+    border: 1px solid #FF1493; /* Darker pink */
+    color: white;
+    font-family: 'Audiowide', sans-serif;
+    font-size: 14px;
+    padding: 10px;
+    border-radius: 10px;
+    width: calc(100% - 20px); /* Full width minus padding */
+    margin-top: 10px;
+    outline: none;
+}
+
+/* Message bubble styling */
+.tlkio_messages .tlkio_message {
+    background-color: #FF1493; /* Dark pink message bubble */
+    color: white;
+    border-radius: 10px;
+    padding: 10px;
+    margin-bottom: 5px;
+    font-size: 14px;
+    font-family: 'Audiowide', sans-serif;
+    max-width: 80%; /* Limit message width */
+    word-wrap: break-word;
+}
+
+/* User's message bubble styling */
+.tlkio_messages .tlkio_message.tlkio_message_user {
+    background-color: #FF69B4; /* Lighter pink */
+    align-self: flex-end; /* Align to right */
+}
+
+/* Username styling */
+.tlkio_messages .tlkio_message .tlkio_user {
+    color: #FFF;
+    font-weight: bold;
+}
+
+/* Scrollbar customizations */
+#tlkio::-webkit-scrollbar {
+    width: 8px;
+}
+
+#tlkio::-webkit-scrollbar-thumb {
+    background-color: #FF69B4; /* Pink scrollbar */
+    border-radius: 10px;
+}
+
+#tlkio::-webkit-scrollbar-track {
+    background: #2C2C2C; /* Dark background for scrollbar track */
+}
